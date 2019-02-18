@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="trivia.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <title>Game of Trivia!</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Game of Thrones Trivia!
+        </h1>
+    </header>
+
+    <div id="start-page">
+            <img src="begin.gif">
+            <br><br>
+            <button type="button" class="start-button btn btn-dark btn-lg">Begin</button>
+    </div>
+
+<div id="quiz">
+    <form>
+  <h3>Answer all the questions before the time runs out!</h3>  
+  <h4>Time Remaining: </h4>
+      <h5>Q1. What was the name of Robb Stark's Dire Wolf?</h5><br>
+      <input type="radio" name="Q1" value="ghost"> "Ghost"
+      <input type="radio" name="Q1" value="greywind"> "Grey Wind"
+      <input type="radio" name="Q1" value="shaggydog"> "Shaggydog"
+      <input type="radio" name="Q1" value="summer"> "Summer"
+      <br><br>
+      <h5>Q2. Who was King of Westeros at the start of GoT Season 1?</h5><br>
+      <input type="radio" name="Q2" value="jaime"> "Jaime Lannister"
+      <input type="radio" name="Q2" value="robert"> "Robert Baratheon"
+      <input type="radio" name="Q2" value="ned"> "Ned Stark"
+      <input type="radio" name="Q2" value="robb"> "Robb Stark"
+      <br><br>
+      <h5>Q3. What is the name of Daenaerys' main dragon?</h5><br>
+      <input type="radio" name="Q3" value="drogo"> "Drogo"
+      <input type="radio" name="Q3" value="viserys"> "Viserys"
+      <input type="radio" name="Q3" value="Balerion"> "Balerion"
+      <input type="radio" name="Q3" value="drogon"> "Drogon"
+      <br><br>
+      <h5>Q4. Which knight renounces his title in Westeros in order to go serve Daenaerys?</h5><br>
+      <input type="radio" name="Q4" value="daario"> "Daario Naharis"
+      <input type="radio" name="Q4" value="loras"> "Loras Tyrell"
+      <input type="radio" name="Q4" value="jorah"> "Jorah Mormont"
+      <input type="radio" name="Q4" value="barristan"> "Barristan Selmy"
+      <br><br>
+      <h5>Q5. Who was really responsible for King Joffrey's murder?</h5><br>
+      <input type="radio" name="Q5" value="daenaerys"> "Daenaerys Targaryen"
+      <input type="radio" name="Q5" value="brienne"> "Brienne of Tarth"
+      <input type="radio" name="Q5" value="olenna"> "Olenna Tyrell"
+      <input type="radio" name="Q5" value="melisandre"> "Melisandre"
+      <br><br>
+
+      <button type="button" class="done-button btn btn-dark btn-lg">Done</button>
+  </form>
+</div>
+  <div id="results-page">
+      <p>Here are your results:</p>
+      <p id="correct">Correct:</p>
+      <p id="incorrect">Incorrect: </p>
+      <p id="unsanswered">Unanswered: </p>
+      <br><br>
+      <img src="joffrey.gif">
+      <br><br>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="trivia.js"></script>
+</body>
+</html>

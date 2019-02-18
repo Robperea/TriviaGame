@@ -1,0 +1,22 @@
+body {
+    background-image: url("got.jpg");
+    height: 100%;
+    width: 100%;
+    background-size:100%;
+}
+header {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: bolder;
+    font-size: 2em;
+}
+#start-page {
+    margin-top: 30px;
+    margin-left: 30%;
+}
+#quiz {
+    
+}
+#results-page {
+}
