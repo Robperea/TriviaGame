@@ -1,32 +1,42 @@
-document.ready = function () {
+$(document).ready(function(){
+    var correct = 0;
+    var incorrect = 0;
+    var unanswered = 0;
 
-$(".start-button").on("click", function(){
-    $("#start-page").css("visibility", "hidden");
-    startGame();
-    console.log("done");
-})
-$(".done-button").on("click", function () {
-    $("#quiz").hide();
-    resultsPage();
-})
+    $("#correct").html("Correct: " + correct);
+    $("#incorrect").html("Incorrect: " + incorrect);
+    $("#unanswered").html("Unanswered: " + unanswered);
+      
+  var startPage = function () {
+      $("#quiz").hide();
+      $("#results-page").hide();
+  }
+  startPage();
 
-var correct = 0;
-var incorrect = 0;
-var unsanswered = 0;
-
-var startGame = function() {
+  $(".start-button").on("click", function(){
     $("#start-page").hide();
-}
-
-var questionsPage = function () {
     $("#quiz").show();
-}
+    })
 
-var resultsPage = function () {
-    $("#results-page").css("visibility", "visible");
-}
+    $(".done-button").on("click", function () {
+        $("#quiz").hide();
+        $("#results-page").show();
+        answers();
+    })
 
-var timer = function () {
+var answers = function () {
+    var q1 = $("input").find("name='Q1'").val();
 
+    if (q1 == "greywind") {
+        correct++;
+        alert("Correct = " + correct);
+    }
+    else if (q1 == undefined) {
+        unanswered++;
+    }
+    else {
+        incorrect++;
+    }
 }
-}
+})
+
